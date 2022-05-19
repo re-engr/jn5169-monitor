@@ -1,20 +1,17 @@
 # Script for writing to the JN5169 monitor program 
 # **********************************************************************************
 # These actions may damage the device! 
-# If the device has an OTA update, then you need to find out in which 
-#	part of the flash memory the firmware is located
 #
 # 1. Enter in bootloader;
 # 2. Set the serial port number;
 # 3. Run this script;
-# 4. If successful, you will see return codes [0x3, 0x0a, 0x0, 0x9].
+# 4. If successful, you will see Flashing comlited.
 # 5. Start the terminal and set the same port number, baud rate 115200 8n1;
 # 6. Remove the jumper from the bootloader contact and restart the microcontroller;
 # 7. If everything is in order, you will see a message in the terminal prompting what to do next;
 # 8. Before pressing the key, enable output logging;
 # 9. 'f' - you will have all the memory 0x00080000 - 0x000FFFFF (Flash Applications Code (512 kB))
 # 	 'w' - the program will send the firmware file, with the correct MAGIC_NUMBER and file ID (0f 03 00 0b)
-# 10. Well done! Now you can flash this file back and restore your device :)
 #	
 # **********************************************************************************
 # Contact: re-engr.ru (https://github.com/re-engr/jn5169-monitor)
